@@ -1,15 +1,44 @@
 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-image: url('bg.jpg');
 }
 
 .main{
-    display: flex;
+    display: inline-grid;
     justify-content: center;
     align-items: center;
+    grid-template-columns: auto auto auto;
+    width: -webkit-fill-available;
+}
+
+.img-div{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .img{
     height: 90vh;
     width: max-content;
     overflow: hidden;
+}
+
+.svg-div{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 21px;
+    justify-self: anchor-center;
+}
+
+.svgg{
+    max-width: 40px;
+    max-height: min-content;
+    min-width: 100%;
+    min-height: max-content;
+    cursor: pointer;
 }
