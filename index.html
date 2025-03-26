@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Stonks</title>
     <link rel="stylesheet" href="index.css" />
   </head>
@@ -10,7 +11,6 @@
     <div class="main">
       <div class="svg-div">
         <img
-          rel="preload"
           class="svgg"
           src="./icons/left.svg"
           alt="left"
@@ -18,11 +18,10 @@
         />
       </div>
       <div class="img-div">
-        <img rel="preload" class="img" src="./assets/image1.jpg" alt="image1" />
+        <img class="img" src="./assets/image1.jpg" alt="image1" />
       </div>
       <div class="svg-div">
         <img
-          rel="preload"
           class="svgg"
           src="./icons/right.svg"
           alt="right"
@@ -30,6 +29,6 @@
         />
       </div>
     </div>
-    <script src="index.js"></script>
+    <script src="index.js" type="module"></script>
   </body>
 </html>
