@@ -39,6 +39,20 @@ function increment() {
   //   console.log(pointer);
 }
 
+function changeImg(event) {
+  let point = event.target.classList[0];
+  let point1 = Number(point[point.length - 2]);
+  let point2 = Number(point[point.length - 1]);
+  if (!isNaN(point1)) point = String(point1) + String(point2);
+  else point = point2;
+  if (point) {
+    dots[pointer].classList.remove("dot-black");
+    pointer = point - 1;
+    imagesDOM.src = images[pointer];
+    dots[pointer].classList.add("dot-black");
+  }
+}
+
 const preloadImage = (src) =>
   new Promise((resolve, reject) => {
     const image = new Image();
