@@ -47,3 +47,28 @@ body {
     min-height: max-content;
     cursor: pointer;
 }
+
+.dots{
+    grid-column: 1 / span 3;
+     display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 80px;
+
+}
+
+.dot1, .dot2, .dot3, .dot4, .dot5, .dot6, .dot7, .dot8, .dot9, .dot10, .dot11{
+    color: white;
+    background: white;
+    border-radius: 50px;
+    width: 10px;
+    height: 10px;
+}
+
+.dot-black {
+    color: black;
+    background: black;
+    border-radius: 50px;
+    width: 10px;
+    height: 10px;
+}

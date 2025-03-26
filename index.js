@@ -13,18 +13,29 @@ let images = [
   "./assets/image11.jpg",
 ];
 
+let dots = [];
+
 let imagesDOM = document.querySelector(".img");
+for (let i = 1; i <= 11; i++) {
+  dots.push(document.querySelector(`.dot` + i));
+}
+
+dots[pointer].classList.add("dot-black");
 
 function decrement() {
+  dots[pointer].classList.remove("dot-black");
   if (pointer == 0) pointer = images.length;
   pointer--;
   imagesDOM.src = images[pointer];
+  dots[pointer].classList.add("dot-black");
 }
 
 function increment() {
+  dots[pointer].classList.remove("dot-black");
   if (pointer == images.length - 1) pointer = -1;
   pointer++;
   imagesDOM.src = images[pointer];
+  dots[pointer].classList.add("dot-black");
   //   console.log(pointer);
 }
 
